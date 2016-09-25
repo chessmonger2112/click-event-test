@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+
+  <label id="labelId" onclick="clickEventFunction();">
+    I'm a label
+    <input id="inputId">
+  </label>
+
+
+  <div id="divId" onclick="clickEventFunction();">
+    I'm a Divv
+    <input id="inputId">
+  </div>
+
+
+
+  <script>
+
+    var clickEventFunction = () => console.log("I've been clicked!");
+
+    document.getElementById("labelId").addEventListener("click", function(event) {
+      console.log(this.id," is what I am.");
+    });
+
+
+  </script>
+
+  </body>
+</html>
